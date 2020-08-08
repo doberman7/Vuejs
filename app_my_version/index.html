@@ -16,7 +16,8 @@
 
     <div class="section">
       <article v-for="submission in sortedSubmissions" v-bind:key="submission.id"
-        class="media">
+        class="media"
+        v-bind:class="{'blue-border':submission.votes>=20}">
         <figure class="media-left">
           <img class="image is-64x64"
             v-bind:src="submission.submissionImage">
