@@ -11,9 +11,10 @@ new Vue({
     }
   },
   methods: {
-    upvote(submissionId) {
+    upvote(submisionId) {
       const submission = this.submissions.find(
-        submission => submission.id === submissionId
+        submission => submission.id === submisionId
+
       );
       submission.votes++;
     }
