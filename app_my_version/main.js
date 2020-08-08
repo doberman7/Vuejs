@@ -10,4 +10,12 @@ new Vue({
       });
     }
   },
+  methods: {
+    upvote(submissionId){
+      const submission = this.submissions.find(
+        submission => submission.id === submission.id
+      );
+      submission.votes++;
+    }
+  }
 });
