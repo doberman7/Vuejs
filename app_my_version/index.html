@@ -39,10 +39,11 @@
                   v-bind:src="submission.avatar">
               </small>
             </p>
+            <!-- <button v-on:click="upvote">boton</button> -->
           </div>
         </div>
         <div class="media-right">
-          <span class="icon is-small">
+          <span class="icon is-small" v-on:click="upvote(submission.id)">
             <i class="fa fa-chevron-up"></i>
             <strong class="has-text-info">{{ submission.votes }}</strong>
           </span>
@@ -50,7 +51,6 @@
       </article>
     </div>
   </div>
-
   <script src="https://unpkg.com/vue"></script>
   <script src="./seed.js"></script>
   <script src="./main.js"></script>
